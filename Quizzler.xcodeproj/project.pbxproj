@@ -10,9 +10,11 @@
 		4873E91D28A0B961006D5127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4873E91C28A0B961006D5127 /* AppDelegate.swift */; };
 		4873E91F28A0B961006D5127 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4873E91E28A0B961006D5127 /* SceneDelegate.swift */; };
 		4873E92128A0B961006D5127 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4873E92028A0B961006D5127 /* ViewController.swift */; };
-		4873E92428A0B961006D5127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4873E92228A0B961006D5127 /* Main.storyboard */; };
 		4873E92628A0B966006D5127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4873E92528A0B966006D5127 /* Assets.xcassets */; };
 		4873E92928A0B966006D5127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4873E92728A0B966006D5127 /* LaunchScreen.storyboard */; };
+		4873E93228A0BC4C006D5127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4873E93028A0BC4C006D5127 /* Main.storyboard */; };
+		4873E93428A1052E006D5127 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4873E93328A1052E006D5127 /* Question.swift */; };
+		4873E93928A10BCD006D5127 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4873E93828A10BCD006D5127 /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		4873E91C28A0B961006D5127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4873E91E28A0B961006D5127 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4873E92028A0B961006D5127 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4873E92328A0B961006D5127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4873E92528A0B966006D5127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4873E92828A0B966006D5127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4873E92A28A0B966006D5127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4873E93128A0BC4C006D5127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4873E93328A1052E006D5127 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		4873E93828A10BCD006D5127 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				4873E91C28A0B961006D5127 /* AppDelegate.swift */,
 				4873E91E28A0B961006D5127 /* SceneDelegate.swift */,
-				4873E92028A0B961006D5127 /* ViewController.swift */,
-				4873E92228A0B961006D5127 /* Main.storyboard */,
+				4873E93528A10B5A006D5127 /* Modal */,
+				4873E93728A10BA2006D5127 /* View */,
+				4873E93628A10B86006D5127 /* Controller */,
 				4873E92528A0B966006D5127 /* Assets.xcassets */,
 				4873E92728A0B966006D5127 /* LaunchScreen.storyboard */,
 				4873E92A28A0B966006D5127 /* Info.plist */,
 			);
 			path = Quizzler;
+			sourceTree = "<group>";
+		};
+		4873E93528A10B5A006D5127 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				4873E93328A1052E006D5127 /* Question.swift */,
+				4873E93828A10BCD006D5127 /* QuizBrain.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		4873E93628A10B86006D5127 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4873E92028A0B961006D5127 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4873E93728A10BA2006D5127 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4873E93028A0BC4C006D5127 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +155,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4873E93228A0BC4C006D5127 /* Main.storyboard in Resources */,
 				4873E92928A0B966006D5127 /* LaunchScreen.storyboard in Resources */,
 				4873E92628A0B966006D5127 /* Assets.xcassets in Resources */,
-				4873E92428A0B961006D5127 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4873E93928A10BCD006D5127 /* QuizBrain.swift in Sources */,
 				4873E92128A0B961006D5127 /* ViewController.swift in Sources */,
+				4873E93428A1052E006D5127 /* Question.swift in Sources */,
 				4873E91D28A0B961006D5127 /* AppDelegate.swift in Sources */,
 				4873E91F28A0B961006D5127 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,20 +179,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4873E92228A0B961006D5127 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4873E92328A0B961006D5127 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4873E92728A0B966006D5127 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4873E92828A0B966006D5127 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4873E93028A0BC4C006D5127 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4873E93128A0BC4C006D5127 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

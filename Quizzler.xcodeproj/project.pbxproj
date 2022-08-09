@@ -62,7 +62,7 @@
 			children = (
 				4873E91C28A0B961006D5127 /* AppDelegate.swift */,
 				4873E91E28A0B961006D5127 /* SceneDelegate.swift */,
-				4873E93528A10B5A006D5127 /* Modal */,
+				4873E93528A10B5A006D5127 /* Model */,
 				4873E93728A10BA2006D5127 /* View */,
 				4873E93628A10B86006D5127 /* Controller */,
 				4873E92528A0B966006D5127 /* Assets.xcassets */,
@@ -72,13 +72,13 @@
 			path = Quizzler;
 			sourceTree = "<group>";
 		};
-		4873E93528A10B5A006D5127 /* Modal */ = {
+		4873E93528A10B5A006D5127 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				4873E93328A1052E006D5127 /* Question.swift */,
 				4873E93828A10BCD006D5127 /* QuizBrain.swift */,
 			);
-			path = Modal;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4873E93628A10B86006D5127 /* Controller */ = {
